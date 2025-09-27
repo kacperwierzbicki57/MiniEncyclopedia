@@ -1,0 +1,318 @@
+<doctype html>
+<html lang="pl">
+
+<head>
+<title>Strona startowa</title>
+
+<style type="text/css">
+<!--
+body {
+  background: linear-gradient(135deg, #7980a1 0%, #3b4b66 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  color: #222;
+}
+nav ul {
+  background: #22223b;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  margin-right: 8px;
+}
+
+li:last-child {
+  float: right;
+  margin-right: 0;
+}
+
+li a, li img {
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+li a {
+  display: block;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, li a:active {
+  background: #4f8cff;
+  color: #fff;
+  transform: translateY(-2px) scale(1.05);
+}
+
+li .active, li a.active {
+  background: #38b6ff;
+  color: #fff;
+}
+
+input[type="text"] {
+  border: none;
+  border-radius: 6px;
+  padding: 8px;
+  margin-right: 4px;
+  font-size: 1em;
+  background: #f4f6fb;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+input[type="submit"] {
+  background: #38b6ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+input[type="submit"]:hover {
+  background: #22223b;
+}
+
+section {
+  background: #fff;
+  margin: 16px auto;
+  padding:16px 24px;
+  border-radius: 16px;
+  max-width: 800px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+}
+
+h2 {
+  color: #22223b;
+  font-size: 2.2em;
+  margin-bottom: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 24px;
+  background: #f4f6fb;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+th, td {
+  padding: 16px;
+  border: none;
+}
+
+th {
+  background: #38b6ff;
+  color: #fff;
+  font-weight: 600;
+}
+
+tr {
+  text-align: center;
+  transition: background 0.2s;
+}
+
+tr:hover {
+  background: #e0e7ff;
+}
+
+#nazwa {
+  text-align: left;
+  font-weight: 500;
+}
+
+caption {
+  caption-side: top;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #22223b;
+}
+
+.anim {
+  display: block;
+  margin: 32px auto;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(56,182,255,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 90%;
+}
+
+.anim:hover {
+  transform: scale(1.04);
+  box-shadow: 0 12px 32px rgba(56,182,255,0.25);
+}
+
+.nad {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(34,34,59,0.92);
+  align-items: center;
+  justify-content: center;
+}
+
+.nad_zaw {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(56,182,255,0.25);
+}
+
+.zamknij {
+  position: absolute;
+  top: 24px;
+  right: 48px;
+  color: #fff;
+  font-size: 48px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.zamknij:hover, .zamknij:focus {
+  color: #38b6ff;
+}
+
+footer {
+  text-align: center;
+  padding: 24px 0 12px 0;
+  color: #22223b;
+  font-size: 1em;
+  background: none;
+  margin-top: 32px;
+}
+
+
+
+-->
+</style>
+
+
+</head>
+
+<body>
+
+<nav>
+
+<ul>
+<li><img src="obrazy/logo.png" alt="logo" width=60 height=60></li>
+<li> <a class="active" href="StronaGłówna.html"> Strona główna </a> </li>
+<li> <a href="Polska.html">Polska</a> </li>
+<li> <a href="USA.html">USA</a> </li>
+<li> <a href="Japonia.html">Japonia</a> </li>
+<li> <a href="Sugestie.html">Dodaj nowy kraj</a> </li>
+<li style="float:right"> <form action = "skrypt.url" method="post"> <input type="text" placeholder="Search.."> <input type="submit" value="szukaj"> </form> </li>
+</ul>
+</nav>
+
+<section>
+
+<h2> Witaj na stronie! </h2>
+
+<p>Wybierz kraj z menu nawigacyjnego aby dowiedzieć się o nim.<br>
+Możesz również dodać sugestię nowego kraju.<br>
+Poniżej znajduje się porównania statystyk</p>
+
+</section>
+
+<section>
+
+<table>
+<caption>Państwa w liczbach<caption>
+<thead>
+
+<tr>
+<th>Nazwa kraju</th>
+<th>Powierzchnia</th>
+<th>Zaludnienie(osób/km<sup>2</sup>)</th>
+<th>PKB(na osobę)</th>
+</tr>
+
+<tr>
+<td id="nazwa">Polska</td>
+<td>312 696</td>
+<td>123</td>
+<td>15 629 USD</td>
+</tr>
+
+<tr>
+<td id="nazwa">USA</td>
+<td>9 373 967</td>
+<td>35</td>
+<td>59 495</td>
+</tr>
+
+<tr>
+<td id="nazwa">Japonia</td>
+<td>377 972</td>
+<td>335</td>
+<td>40 849</td>
+</tr>
+
+</thead>
+</table>
+</section>
+<br>
+<img class="anim" id="obraz" src="obrazy/świat.jpg" alt="mapa">
+
+<div id="m_nad" class="nad">
+
+
+  <span class="zamknij">&times;</span>
+
+  <img class="nad_zaw" id="obraz_1">
+
+  
+</div>
+
+
+
+<br><br><hr/>
+<footer>Wykonano przez:Kacper Wierzbicki
+<span id="data"></span>
+</footer>
+
+
+<script>
+var d = new Date();
+document.getElementById('data').innerHTML = d.toUTCString();
+
+
+var nad = document.getElementById("m_nad");
+var obraz = document.getElementById("obraz");
+var nad_obraz = document.getElementById("obraz_1");
+
+obraz.onclick = function(){
+  nad.style.display = "block";
+  nad_obraz.src = this.src; 
+}
+
+var span = document.getElementsByClassName("zamknij")[0];
+span.onclick = function() {
+  nad.style.display = "none";
+}
+
+
+</script>
+
+
+</body>
+
+</html>

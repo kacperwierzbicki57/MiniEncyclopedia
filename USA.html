@@ -1,0 +1,380 @@
+<doctype html>
+<html lang="pl">
+
+<head>
+<title>USA</title>
+<style type="text/css">
+<!--
+body {
+  background: linear-gradient(135deg, #7980a1 0%, #3b4b66 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  color: #222;
+}
+
+nav ul {
+  background: #22223b;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  margin-right: 8px;
+}
+
+li:last-child {
+  float: right;
+  margin-right: 0;
+}
+
+li a, li img {
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+li a {
+  display: block;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, li a:active {
+  background: #4f8cff;
+  color: #fff;
+  transform: translateY(-2px) scale(1.05);
+}
+
+li .active, li a.active {
+  background: #38b6ff;
+  color: #fff;
+}
+
+input[type="text"] {
+  border: none;
+  border-radius: 6px;
+  padding: 8px;
+  margin-right: 4px;
+  font-size: 1em;
+  background: #f4f6fb;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+input[type="submit"] {
+  background: #38b6ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+input[type="submit"]:hover {
+  background: #22223b;
+}
+
+section {
+  background: #fff;
+  margin: 32px auto;
+  padding: 32px 24px;
+  border-radius: 16px;
+  max-width: 800px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+}
+
+h1 {
+  color: #22223b;
+  font-size: 2.2em;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #e0e7ff;
+  margin: 24px 0;
+}
+
+.guzik {
+  background: #38b6ff;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 24px;
+  font-size: 1em;
+  border-radius: 8px 8px 0 0;
+  margin-right: 8px;
+  margin-bottom: 0;
+  transition: background 0.2s;
+  font-weight: 500;
+}
+
+.guzik:hover, .guzik:focus {
+  background: #22223b;
+}
+
+.tab_tekst {
+  display: none;
+  padding: 32px 24px;
+  background: #f4f6fb;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  margin-bottom: 24px;
+  margin-top: -4px;
+}
+
+ul.b {
+  list-style-type: circle;
+  margin-left: 24px;
+}
+
+a {
+  color: #38b6ff;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #22223b;
+}
+
+.zawartosc {
+  max-width: 700px;
+  position: relative;
+  margin: 32px auto 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(56,182,255,0.10);
+  background: #fff;
+  overflow: hidden;
+}
+
+.slajdy {
+  display: none;
+}
+
+.slajdy img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(56,182,255,0.10);
+}
+
+.lewo, .prawo {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 50%;
+  user-select: none;
+  background: rgba(56,182,255,0.7);
+  transition: background 0.2s;
+}
+
+.lewo {
+  left: 16px;
+}
+.prawo {
+  right: 16px;
+}
+.lewo:hover, .prawo:hover {
+  background: #22223b;
+}
+
+.kropki {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.aktywne, .kropki:hover {
+  background-color: #38b6ff;
+}
+
+footer {
+  text-align: center;
+  padding: 24px 0 12px 0;
+  color: #22223b;
+  font-size: 1em;
+  background: none;
+  margin-top: 32px;
+}
+
+
+-->
+</style>
+</head>
+
+<body>
+
+
+
+<nav>
+
+
+
+<ul id="nav">
+<li id="li"><img src="obrazy/logo.png" alt="logo" width=60 height=60></li>
+<li id="li"> <a href="StronaGłówna.html"> Strona główna </a> </li>
+<li id="li"> <a href="Polska.html">Polska</a> </li>
+<li id="li"> <a class="active" href="USA.html">USA</a> </li>
+<li id="li"> <a href="Japonia.html">Japonia</a> </li>
+<li id="li"> <a href="Sugestie.html">Dodaj nowy kraj</a> </li>
+<li style="float:right"> <form action = "skrypt.url" method="post"> <input type="text" placeholder="Search.."> <input type="submit" value="szukaj"> </form> </li>
+</nav>
+
+
+
+<h1> USA </h1>
+<hr/>
+<section>
+<button class="guzik" onclick="otworz('poloz', this)" id="pierwsze">Położenie</button>
+<button class="guzik" onclick="otworz('charak', this)">Charakerystyka</button>
+<button class="guzik" onclick="otworz('ciekaw', this)">Ciekawostki</button>
+
+<div id="poloz" class="tab_tekst">
+<p>Państwo leżące w Ameryce Północnej, pomiędzy Oceanem Spokojnym od zachodu, Oceanem Arktycznym od północnego zachodu i Oceanem Atlantyckim od wschodu. Głównie tereny nizinne i równiny.
+<p>Państwa graniczące:
+<ul>
+<li>Kanada</li><br>
+<li>Meksyk</li><br>
+</ul>
+</p>
+</div>
+
+<div id="charak" class="tab_tekst">
+
+<p>Pełną nazwą są Stany Zjednoczone Ameryki (United States of America). Powstało z kolonii brytyjskich. Aktualnym ustrojem politycznym jest prezedencjalizm.
+</p>
+
+
+</div>
+
+<div id="ciekaw" class="tab_tekst">
+ 
+ <ul class = "b">
+<li>Kraj ten jest 30 razy większy od Polski</li><br>
+<li>Najwyższym szczytem jest McKinley, 6 194 m n.p.m. </li><br>
+<li>W stanie Montana jest 3 razy więcej krów niż ludzi</li><br>
+<li>Najniższa zanotowana temperatura na Alasce to -62 stopnie Celsjusza, a najwyższa to 56 stopni Celsjusza w Dolinie śmierci w Kalifornii</li><br>
+<li>W kraju tym popularne są automaty dla wędkarzy. Można w nich kupić żywą przynętę razem z haczykami i żyłkami.</li><br>
+<li>Niektóre autostrady mają aż 9 pasów ruchu w jednym kierunku</li><br>
+<li>W Nowym Jorku znajduje się około 5 600 wieżowców, w tym 50 ponad 200-metrowych</li><br>
+</ul>
+</div>
+
+
+<p style="text-align:center">Kilka przykładowych zdjęć:</p>
+
+
+<div class="zawartosc">
+
+  <div class="slajdy">
+    
+    <img src="obrazy/waszyngton.jpg" alt="stolica" style="width:100%">
+    <p style="text-align:center">Stolica USA - Waszyngton</p>
+  </div>
+
+  <div class="slajdy">
+   
+    <img src="obrazy/USAmapa.jpg" alt="mapa" style="width:100%">
+    <p style="text-align:center">Bielik amerykański - krajowy symbol</p>
+    
+  </div>
+
+  <div class="slajdy">
+   
+    <img src="obrazy/fUSA.png" alt="flaga" style="width:100%">
+    <p style="text-align:center">Flaga Stanów Zjednoczonych</p>
+    
+  </div>
+
+ 
+  <a class="lewo" onclick="dodaj(-1)">&#10094;</a>
+  <a class="prawo" onclick="dodaj(1)">&#10095;</a>
+</div>
+<br>
+
+
+<div style="text-align:center">
+  <span class="kropki" onclick="aktualny(1)"></span>
+  <span class="kropki" onclick="aktualny(2)"></span>
+  <span class="kropki" onclick="aktualny(3)"></span>
+</div>
+<br>
+<a href="https://pl.wikipedia.org/wiki/Stany_Zjednoczone">Link do strony Wikipedii</a>
+<br><br><hr/>
+<footer>Wykonano przez:Kacper Wierzbicki
+<span id="data"></span>
+</footer>
+
+
+<script>
+var d = new Date();
+document.getElementById('data').innerHTML = d.toUTCString();
+
+var slajd_Indeks = 1;
+pokaz(slajd_Indeks);
+function dodaj(n) {
+  pokaz(slajd_Indeks += n);
+}
+function aktualny(n) {
+  pokaz(slajd_Indeks = n);
+}
+
+function pokaz(n) {
+  var i;
+  var slajd = document.getElementsByClassName("slajdy");
+  var kropki = document.getElementsByClassName("kropki");
+  if (n > slajd.length) {slajd_Indeks = 1}
+  if (n < 1) {slajd_Indeks = slides.length}
+  for (i = 0; i < slajd.length; i++) {
+      slajd[i].style.display = "none";
+  }
+  for (i = 0; i < kropki.length; i++) {
+      kropki[i].className = kropki[i].className.replace(" aktywne", "");
+  }
+  slajd[slajd_Indeks-1].style.display = "block";
+  kropki[slajd_Indeks-1].className += " aktywne";
+}
+function otworz(nazwa, elmnt) {
+  var i, tab_tekst, guzik;
+  tab_tekst = document.getElementsByClassName("tab_tekst");
+  for (i = 0; i < tab_tekst.length; i++) {
+    tab_tekst[i].style.display = "none";
+  }
+
+  guzik = document.getElementsByClassName("guzik");
+  for (i = 0; i < guzik.length; i++) {
+    guzik[i].style.backgroundColor = "";
+  }
+
+  document.getElementById(nazwa).style.display = "block";
+
+  elmnt.style.backgroundColor = "red";
+}
+
+document.getElementById("pierwsze").click();
+</script>
+</body>
+
+</html>

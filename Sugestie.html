@@ -1,0 +1,239 @@
+<doctype html>
+<html lang="pl">
+
+<head>
+<title>Sugestie</title>
+
+<style type="text/css">
+<!--
+body {
+  background: linear-gradient(135deg, #7980a1 0%, #3b4b66 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  color: #222;
+}
+nav ul {
+  background: #22223b;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  margin-right: 8px;
+}
+
+li:last-child {
+  float: right;
+  margin-right: 0;
+}
+
+li a, li img {
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+li a {
+  display: block;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, li a:active {
+  background: #4f8cff;
+  color: #fff;
+  transform: translateY(-2px) scale(1.05);
+}
+
+li .active, li a.active {
+  background: #38b6ff;
+  color: #fff;
+}
+
+#textMain{
+   border: none;
+  border-radius: 6px;
+  padding: 8px;
+  margin-right: 4px;
+  font-size: 1em;
+  background: #f4f6fb;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+
+}
+ input[type="date"], textarea, input[list], #textExtra {
+  border: none;
+  border-radius: 6px;
+  padding: 8px;
+  margin-right: 4px;
+  font-size: 1em;
+  background: #e3e5e9;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  margin-bottom: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  
+}
+
+input[type="submit"] {
+  background: #38b6ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+input[type="submit"]:hover {
+  background: #22223b;
+}
+
+#form2 {
+  background: #fff;
+  margin: 32px auto;
+  padding: 32px 24px;
+  border-radius: 16px;
+  max-width: 600px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+}
+
+h1 {
+  color: #22223b;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer {
+  text-align: center;
+  padding: 24px 0 12px 0;
+  color: #22223b;
+  font-size: 1em;
+  background: none;
+  margin-top: 32px;
+}
+
+label {
+  font-weight: 500;
+  color: #22223b;
+}
+
+@media (max-width: 700px) {
+  form {
+    padding: 16px 8px;
+  }
+  nav ul {
+    border-radius: 0 0 8px 8px;
+  }
+}
+
+-->
+</style>
+
+<script>
+
+</script>
+
+</head>
+
+<body>
+
+<nav>
+
+<ul>
+<li><img src="obrazy/logo.png" alt="logo" width=60 height=60></li>
+<li> <a href="StronaGłówna.html"> Strona główna </a> </li>
+<li> <a href="Polska.html">Polska</a> </li>
+<li> <a href="USA.html">USA</a> </li>
+<li> <a href="Japonia.html">Japonia</a> </li>
+<li> <a class = "active "href="Sugestie.html">Dodaj nowy kraj</a> </li>
+<li style="float:right"> <form action = "skrypt.url" method="post"> <input type="text" id="textMain" placeholder="Search.."> <input type="submit" value="szukaj"> </form> </li>
+</ul>
+</nav>
+
+<h1>Witaj w formularzu dodawania państw</h1>
+
+<form id="form2" action = "skrypt.url" method="post">
+
+<div>
+<p>Imię:
+<input  type="text" id="textExtra" name="imię">
+</p>
+<p>Nazwisko:
+<input type="text" id="textExtra" name="nazwisko">
+</p>
+<p>Email:
+<input type="text" id="textExtra" name="Email">
+</p>
+<p>
+Data urodzenia:
+<input type="date">
+</p>
+</div>
+
+<div>NazwaKraju:
+<input type="text" id="textExtra" name="NazwaKraju">
+<p>Napisz kilka słów o kraju
+<br>
+<textarea name="opis" rows=4 cols=80></textarea>
+</p>
+</div>
+
+<div>
+Czy chcesz aby wyświetlano twoje dane na stronie:
+<input type="radio" name="zgoda" value="1">
+tak
+<input type="radio" name="zgoda" value="0" checked="checked">
+nie
+<br><br>
+Źródło z którego wiesz o naszej stronie: 
+<input list="źródła" name="źródło">
+<datalist id="źródła">
+<option value="internet"></option>
+<option value="znajomy/znajoma"></option>
+<option value="prasa"></option>
+<option value="inne"></option>
+</datalist>
+
+
+<input type="submit" value="Wyślij" onclick="alert('Wysłano')">
+</div>
+
+
+
+
+</form>
+
+
+
+
+<br><br><hr/>
+<footer>Wykonano przez:Kacper Wierzbicki
+<span id="data"></span>
+</footer>
+
+
+<script>
+var d = new Date();
+document.getElementById('data').innerHTML = d.toUTCString();
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>
