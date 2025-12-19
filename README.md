@@ -66,7 +66,7 @@ Approved submissions are dynamically integrated into the encyclopedia, allowing 
 
 1. Clone the repository  
    
-   - git clone https://github.com/your-username/mini-encyclopedia.git
+   - git clone https://github.com/kacperwierzbicki57/MiniEncyclopedia.git
 
 
 2. Open `StronaGłówna.html` in your browser
